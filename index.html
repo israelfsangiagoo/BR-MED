@@ -211,7 +211,7 @@ function salvarConfiguracao() {
 async function carregarDados() {
   const sheetId = localStorage.getItem(CONFIG_KEY);
   try {
-    const resumo = await carregarAba(sheetId, 'RESUMO_MENSAL');
+    const resumo = await carregarAba(0, 'RESUMO_MENSAL');
     const faturamento = await carregarAba(1852761433, 'FATURAMENTO');
     const profissionais = await carregarAba(576299438, 'PROFISSIONAIS');
     const origem = await carregarAba(1391759105, 'ORIGEM');
